@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:hint="이름.."
+        android:inputType="textAutoComplete"
+        android:textSize="18sp" />
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/user_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:hint="성별..(남/여)"
+        android:inputType="textAutoComplete"
+        android:textSize="18sp" />
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/user_birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:hint="생년월일(1993-07-25)"
+        android:inputType="textAutoComplete"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:text="SAVE"
+            android:textColor="#fff" />
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/button_cancel"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:text="CANCEL"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

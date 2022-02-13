@@ -9,6 +9,8 @@ import androidx.lifecycle.viewModelScope
 import com.yongbeom.myapplication.model.db.AppDataBase
 import com.yongbeom.myapplication.model.db.Entity.UserEntity
 import com.yongbeom.myapplication.model.repository.Repository
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
     var main_text:ObservableField<String> = ObservableField("Main")
@@ -20,6 +22,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     /**
     * 버튼 텍스트와 연결될 main_text 변수는 Observable 변수로 선언해 안의 value가 바뀌면 버튼 텍스트가 동적으로 바뀌게 됩니다.
     * */
+
+    fun insert(userEntity: UserEntity) = viewModelScope.launch(Dispatchers.IO) {
+        repository.insert(userEntity)
+    }
 
     fun onClickButton(){
         // TODO: Click 시 Room에 데이터를 추가해야 함.
