@@ -1,13 +1,12 @@
-package com.yongbeom.myapplication.Model.DB
+package com.yongbeom.myapplication.model.db
 
 import android.content.Context
-import androidx.lifecycle.MutableLiveData
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.yongbeom.myapplication.Model.DB.DAO.UserDao
-import com.yongbeom.myapplication.Model.DB.Entity.UserEntity
+import com.yongbeom.myapplication.model.db.dao.UserDao
+import com.yongbeom.myapplication.model.db.Entity.UserEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 

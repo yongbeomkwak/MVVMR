@@ -1,4 +1,4 @@
-package com.yongbeom.myapplication.Model.DB.Entity
+package com.yongbeom.myapplication.model.db.Entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
